@@ -7,7 +7,7 @@
 var express    = require('express');        // call express
 var app        = express();                 // define our app using express
 var bodyParser = require('body-parser');
-var hero = require("../models/hero.js");
+//var hero = require("../models/hero.js");
 
 var heroes = [
     {id: 1, name:'a'},
@@ -56,6 +56,7 @@ router.route('/heroes')
     .delete(function(req, res) {
 
         var needle = req.query.name;
+        //let hero = heroes.find((hero) => hero.id === req.id);
 
         // iterate over each element in the array
         for (var i = 0; i < heroes.length; i++) {
@@ -103,7 +104,8 @@ router.route('/heroes/:id')
         for (var i = 0; i < heroes.length; i++) {
             // look for the entry with a matching `code` value
             if (heroes[i].id === needle) {
-                heroes.pop(heroes[i]);
+
+                heroes.splice( i , 1);
                 return res.json({message: 'hero deleted'});
             }
         }
