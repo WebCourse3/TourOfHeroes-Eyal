@@ -1,0 +1,28 @@
+{
+  "name": "tourofheroes-eyal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebCourse3/TourOfHeroes-Eyal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebCourse3/TourOfHeroes-Eyal/issues"
+  },
+  "homepage": "https://github.com/WebCourse3/TourOfHeroes-Eyal#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  },
+  "start": "nodemon app.js",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}
